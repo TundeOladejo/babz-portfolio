@@ -3,7 +3,7 @@ import "./globals.css";
 
 //components
 import Header from "@/components/Header";
-import StairTransition from "@/components/StairTransition";
+// import StairTransition from "@/components/StairTransition";
 import PageTransition from "@/components/PageTransition";
 
 const inter = Inter({ subsets: ["latin"],
@@ -22,7 +22,7 @@ export default function RootLayout({ children }) {
       <body className={inter.variable}>
         <Header />
         <PageTransition />
-        <StairTransition />
+        {/* <StairTransition /> */}
         {children}
       </body>
     </html>
