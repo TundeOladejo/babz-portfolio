@@ -9,17 +9,23 @@ import {
   FaFigma,
   FaNodeJs,
   FaPhp,
+  FaBitbucket,
+  FaJira,
+  FaJenkins,
+  FaDocker
 } from "react-icons/fa";
+
+import { BiLogoPostgresql } from "react-icons/bi";
 
 import { HiMiniAcademicCap, HiBriefcase } from "react-icons/hi2";
 
-import { SiTailwindcss, SiNextdotjs } from "react-icons/si";
+import { SiTailwindcss, SiNextdotjs, SiJest, SiMongodb } from "react-icons/si";
 
 // about data
 const about = {
   title: "About me",
   description:
-    "Li Europan lingues es membres del sam familie. Lor separat existentie es un myth. Por scientie, musica, sport etc, litot Europa usa li sam vocabular. Li lingues differe solmen in li grammatica, li pronunciation e li plu commun vocabules. Omnicos directe al desirabilite de un nov lingua franca: On refusa continuar payar custosi traductores. It va esser tam simplic quam Occidental in fact, it va esser Occidental.",
+    "Experienced software engineer building web applications. Proficient in API development, MySQL databases, and troubleshooting. Strong team player with excellent communication skills.",
   info: [
     {
       fieldName: "Name",
@@ -35,7 +41,7 @@ const about = {
     },
     {
       fieldName: "Skype",
-      fieldValue: "",
+      fieldValue: "https://join.skype.com/invite/pa5VqaIwyNac",
     },
     {
       fieldName: "Nationality",
@@ -61,7 +67,7 @@ const experience = {
   icon: <HiBriefcase />,
   title: "My Experience",
   description:
-    "Angleso it va semblar un simplificat Angles, quam un skeptic Cambridge amico dit me que Occidental es.Li Europan lingues es membres del sam familie. Lor separat existentie es un myth. Por scientie, musica, sport etc, litot Europa usa li sam vocabular.",
+    "Experienced software engineer building web applications. Proficient in API development, MySQL databases, and troubleshooting. Strong team player with excellent communication skills.",
   items: [
     {
       company: "Dufuna Technologies",
@@ -80,15 +86,20 @@ const experience = {
 const education = {
   icon: <HiMiniAcademicCap />,
   title: "My Education",
-  description: "Omnicos directe al desirabilite de un nov lingua franca. Europan lingues es membres del sam familie. Lor separat existentie es un myth. Por scientie, musica, sport etc, litot Europa usa li sam vocabular.",
+  description: "An overview of my academic background, including the degrees and certifications that have equipped me with a solid foundation in software engineering and related fields. This section reflects my commitment to continuous learning and staying at the forefront of industry advancements.",
   items: [
+    {
+      institution: "McKinsey",
+      degree: "Forward Core Skills",
+      duration: "2024",
+    },
     {
       institution: "Udacity",
       degree: "Web Architecture",
       duration: "2023",
     },
     {
-      institution: "udacity",
+      institution: "Udacity",
       degree: "Mobile Web Specialist Nano degree",
       duration: "2023",
     },
@@ -103,7 +114,7 @@ const education = {
 const skills = {
   title: "My Skills",
   description:
-    "But I must explain to you how all this mistaken idea of denouncing pleasure and praising. Omnicos directe al desirabilite de un nov lingua franca. Europan lingues es membres del sam familie. Lor separat existentie es un myth. Por scientie, musica, sport etc, litot Europa usa li sam vocabular.",
+    "A summary of the technical and soft skills that I bring to the table. From programming languages and frameworks to problem-solving and teamwork, this section highlights the competencies that enable me to tackle challenges and deliver effective solutions.",
   skillList: [
     {
       icon: <FaHtml5 />,
@@ -144,6 +155,34 @@ const skills = {
     {
       icon: <SiNextdotjs />,
       name: "NextJs",
+    },
+    {
+      icon: <FaBitbucket />,
+      name: "Bitbucket"
+    },
+    {
+      icon: <FaJira />,
+      name: "Jira"
+    },
+    {
+      icon: <FaJenkins />,
+      name: "Jenkins"
+    },
+    {
+      icon: <SiJest />,
+      name: "Jest"
+    },
+    {
+      icon: <FaDocker />,
+      name: "Docker"
+    },
+    {
+      icon: <BiLogoPostgresql />,
+      name: "Postgresql"
+    },
+    {
+      icon: <SiMongodb />,
+      name: "MongoDb"
     },
   ],
 };

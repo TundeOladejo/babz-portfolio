@@ -8,19 +8,19 @@ const services = [
   {
     num: "01",
     title: "Web Development",
-    description: "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.",
+    description: "I build responsive, high-performance web applications tailored to your needs. From front-end interfaces to robust back-end systems, I ensure your site is scalable, secure, and easy to maintain.",
     href: "#",
   },
   {
     num: "02",
     title: "UI/UX Design",
-    description: "A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth",
+    description: "I craft intuitive and visually appealing user experiences that align with your brand’s identity. By focusing on usability and design principles, I create interfaces that engage and delight your users.",
     href: "#",
   },
   {
     num: "03",
     title: "DevOps",
-    description: "The Big Oxmox advised her not to do so, because there were thousands of bad Commas, wild Question Marks and devious Semikoli, but the Little Blind Text didn’t listen. She packed her seven versalia, put her initial into the belt and made herself on the way. ",
+    description: "I streamline your development processes with efficient CI/CD pipelines, automated testing, and cloud deployment strategies. My goal is to improve collaboration, reduce downtime, and accelerate your delivery timelines.",
     href: "#",
   },
 ];
