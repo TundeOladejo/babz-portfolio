@@ -21,7 +21,7 @@ const info = [
   {
     icon: <FaPhoneAlt />,
     title: "Phone",
-    description: "+2348102992169",
+    description: "+234 810 299 2169",
   },
   {
     icon: <FaEnvelope />,
@@ -30,8 +30,8 @@ const info = [
   },
   {
     icon: <FaMapMarkerAlt />,
-    title: "Address",
-    description: "No 40, Lane D, Jeje Area, Apete, Ibadan",
+    title: "Location",
+    description: "Nigeria (Open to Relocation — UAE preferred)",
   },
 ];
 
@@ -79,8 +79,6 @@ const Contact = () => {
     });
   };
 
-  console.log(formData);
-
   return (
     <motion.section
       initial={{ opacity: 0 }}
@@ -96,15 +94,13 @@ const Contact = () => {
               className="flex flex-col gap-6 p-10 bg-[#27272c] rounded-xl"
               action=""
             >
-              <h3 className="text-4xl text-accent">Let us work together</h3>
+              <h3 className="text-4xl text-accent">Let&apos;s work together</h3>
               <p className="text-white/60">
-                Ready to bring your ideas to life? With my expertise in software
-                engineering, I create scalable, efficient solutions tailored to
-                your needs. Let’s collaborate and turn your vision into reality.
-                Reach out today!
-              </p>
-              {/* input */}
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 ">
+                Looking for a senior engineer who can architect fintech systems,
+                lead teams, and deliver production-ready platforms? I&apos;m open
+                to full-time roles, contract work, and relocation opportunities.
+                Let&apos;s talk about what you&apos;re building.
+              </p>              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 ">
                 <Input
                   name="firstname"
                   type="firstname"

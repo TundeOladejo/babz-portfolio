@@ -1,31 +1,34 @@
 "use client";
 
 import {
-  FaHtml5,
-  FaCss3,
   FaJs,
   FaReact,
-  FaVuejs,
-  FaFigma,
   FaNodeJs,
   FaPhp,
-  FaBitbucket,
-  FaJira,
-  FaJenkins,
-  FaDocker
+  FaDocker,
+  FaAws,
 } from "react-icons/fa";
 
-import { BiLogoPostgresql } from "react-icons/bi";
+import { BiLogoPostgresql, BiLogoTypescript } from "react-icons/bi";
 
 import { HiMiniAcademicCap, HiBriefcase } from "react-icons/hi2";
 
-import { SiTailwindcss, SiNextdotjs, SiJest, SiMongodb } from "react-icons/si";
+import {
+  SiTailwindcss,
+  SiNextdotjs,
+  SiMongodb,
+  SiApachekafka,
+  SiRedis,
+  SiSupabase,
+  SiLaravel,
+  SiExpress,
+} from "react-icons/si";
 
 // about data
 const about = {
   title: "About me",
   description:
-    "Experienced software engineer building web applications. Proficient in API development, MySQL databases, and troubleshooting. Strong team player with excellent communication skills.",
+    "Senior Software Engineer with 6+ years of experience designing and delivering fintech platforms, transaction-driven systems, and enterprise-grade applications. I specialize in building high-reliability financial workflows, event-driven architectures, and scalable backend services. I've led engineering teams, driven technical decisions across multiple products, and consistently delivered systems that reduce processing times and improve operational efficiency.",
   info: [
     {
       fieldName: "Name",
@@ -33,15 +36,15 @@ const about = {
     },
     {
       fieldName: "Phone",
-      fieldValue: "(+2348102992169)",
+      fieldValue: "(+234) 810 299 2169",
     },
     {
       fieldName: "Experience",
-      fieldValue: "5+ Years",
+      fieldValue: "6+ Years",
     },
     {
-      fieldName: "Skype",
-      fieldValue: "https://join.skype.com/invite/pa5VqaIwyNac",
+      fieldName: "Location",
+      fieldValue: "Nigeria (Open to Relocation)",
     },
     {
       fieldName: "Nationality",
@@ -52,12 +55,12 @@ const about = {
       fieldValue: "babatundeoladejo16@gmail.com",
     },
     {
-      fieldName: "Freelance",
-      fieldValue: "available",
+      fieldName: "Availability",
+      fieldValue: "Open to Opportunities",
     },
     {
       fieldName: "Languages",
-      fieldValue: "English, German",
+      fieldValue: "English",
     },
   ],
 };
@@ -67,17 +70,22 @@ const experience = {
   icon: <HiBriefcase />,
   title: "My Experience",
   description:
-    "Experienced software engineer building web applications. Proficient in API development, MySQL databases, and troubleshooting. Strong team player with excellent communication skills.",
+    "Over 6 years of professional experience building fintech platforms, enterprise systems, and scalable web applications across banking, startups, and agency environments.",
   items: [
     {
+      company: "Sterling Bank Ltd.",
+      position: "Full Stack Engineer (Contract)",
+      duration: "Sept 2024 - Present",
+    },
+    {
       company: "Dufuna Technologies",
-      position: "Software Engineer (Frontend)",
-      duration: "2019 - Present",
+      position: "Senior Software Engineer",
+      duration: "Oct 2019 - Dec 2024",
     },
     {
       company: "Cotta & Cush Ltd.",
       position: "Software Engineer",
-      duration: "2018 - 2019",
+      duration: "Sept 2018 - Oct 2019",
     },
   ],
 };
@@ -85,28 +93,29 @@ const experience = {
 //education data
 const education = {
   icon: <HiMiniAcademicCap />,
-  title: "My Education",
-  description: "An overview of my academic background, including the degrees and certifications that have equipped me with a solid foundation in software engineering and related fields. This section reflects my commitment to continuous learning and staying at the forefront of industry advancements.",
+  title: "Education & Certifications",
+  description:
+    "Combining formal education with continuous professional development through industry-recognized certifications and self-directed learning.",
   items: [
     {
-      institution: "McKinsey",
-      degree: "Forward Core Skills",
+      institution: "Udacity",
+      degree: "Mobile Web Specialist Nanodegree",
+      duration: "2023",
+    },
+    {
+      institution: "Udacity",
+      degree: "Web Architecture Certification",
+      duration: "2023",
+    },
+    {
+      institution: "McKinsey & Company",
+      degree: "Forward Core Skills Program",
       duration: "2024",
     },
     {
-      institution: "Udacity",
-      degree: "Web Architecture",
-      duration: "2023",
-    },
-    {
-      institution: "Udacity",
-      degree: "Mobile Web Specialist Nano degree",
-      duration: "2023",
-    },
-    {
-      institution: "Web Architecture",
-      degree: "Udacity",
-      duration: "2023",
+      institution: "Osun State University",
+      degree: "Bachelor of Science",
+      duration: "Graduated",
     },
   ],
 };
@@ -114,75 +123,71 @@ const education = {
 const skills = {
   title: "My Skills",
   description:
-    "A summary of the technical and soft skills that I bring to the table. From programming languages and frameworks to problem-solving and teamwork, this section highlights the competencies that enable me to tackle challenges and deliver effective solutions.",
+    "Full-stack expertise spanning frontend frameworks, backend services, databases, event-driven systems, and cloud infrastructure. Focused on fintech, distributed systems, and performance optimization.",
   skillList: [
     {
-      icon: <FaHtml5 />,
-      name: "HTML",
-    },
-    {
-      icon: <FaCss3 />,
-      name: "CSS 3",
+      icon: <BiLogoTypescript />,
+      name: "TypeScript",
     },
     {
       icon: <FaJs />,
-      name: "Javascript",
+      name: "JavaScript",
     },
     {
       icon: <FaReact />,
       name: "React",
     },
     {
-      icon: <FaVuejs />,
-      name: "VueJs",
-    },
-    {
-      icon: <FaFigma />,
-      name: "Figma",
+      icon: <SiNextdotjs />,
+      name: "Next.js",
     },
     {
       icon: <FaNodeJs />,
-      name: "Node",
+      name: "Node.js",
+    },
+    {
+      icon: <SiExpress />,
+      name: "Express.js",
+    },
+    {
+      icon: <SiLaravel />,
+      name: "Laravel",
     },
     {
       icon: <FaPhp />,
       name: "PHP",
     },
     {
-      icon: <SiTailwindcss />,
-      name: "Tailwind",
-    },
-    {
-      icon: <SiNextdotjs />,
-      name: "NextJs",
-    },
-    {
-      icon: <FaBitbucket />,
-      name: "Bitbucket"
-    },
-    {
-      icon: <FaJira />,
-      name: "Jira"
-    },
-    {
-      icon: <FaJenkins />,
-      name: "Jenkins"
-    },
-    {
-      icon: <SiJest />,
-      name: "Jest"
-    },
-    {
-      icon: <FaDocker />,
-      name: "Docker"
-    },
-    {
       icon: <BiLogoPostgresql />,
-      name: "Postgresql"
+      name: "PostgreSQL",
     },
     {
       icon: <SiMongodb />,
-      name: "MongoDb"
+      name: "MongoDB",
+    },
+    {
+      icon: <SiRedis />,
+      name: "Redis",
+    },
+    {
+      icon: <SiApachekafka />,
+      name: "Apache Kafka",
+    },
+    {
+      icon: <SiSupabase />,
+      name: "Supabase",
+    },
+    {
+      icon: <FaDocker />,
+      name: "Docker",
+    },
+    {
+      icon: <SiTailwindcss />,
+      name: "Tailwind CSS",
+    },
+    {
+      icon: <FaAws />,
+      name: "AWS",
     },
   ],
 };
@@ -195,7 +200,7 @@ import {
   TooltipTrigger,
 } from "@/components/ui/tooltip";
 import { ScrollArea } from "@/components/ui/scroll-area";
-import { animate, motion } from "framer-motion";
+import { motion } from "framer-motion";
 
 const Resume = () => {
   return (
@@ -218,8 +223,8 @@ const Resume = () => {
         >
           <TabsList className="flex flex-col w-full max-w-[380px] mx-auto xl:mx-0 gap-6">
             <TabsTrigger value="experience">Experience</TabsTrigger>
-            <TabsTrigger value="education">Education</TabsTrigger>
             <TabsTrigger value="skills">Skills</TabsTrigger>
+            <TabsTrigger value="education">Education</TabsTrigger>
             <TabsTrigger value="about">About Me</TabsTrigger>
           </TabsList>
 
@@ -241,7 +246,7 @@ const Resume = () => {
                           className="bg-[#232329] h-[184px] py-6 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start gap-1"
                         >
                           <span className="text-accent">{item.duration}</span>
-                          <h3 className="text-xl max-w-[260px] min-h-[60px] text-center lg:text-left ">
+                          <h3 className="text-xl max-w-[260px] min-h-[60px] text-center lg:text-left">
                             {item.position}
                           </h3>
                           <div className="flex items-center gap-3">
@@ -256,6 +261,39 @@ const Resume = () => {
                 </ScrollArea>
               </div>
             </TabsContent>
+
+            {/* skills */}
+            <TabsContent value="skills" className="w-full h-full">
+              <div className="flex flex-col gap-[30px] text-center xl:text-left">
+                <h3 className="text-4xl font-bold">{skills.title}</h3>
+                <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">
+                  {skills.description}
+                </p>
+                <ScrollArea className="h-[400px]">
+                  <ul className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 xl:gap-[30px]">
+                    {skills.skillList.map((skill, index) => {
+                      return (
+                        <li key={index}>
+                          <TooltipProvider delayDuration={100}>
+                            <Tooltip>
+                              <TooltipTrigger className="w-full h-[150px] bg-[#232329] rounded-xl flex justify-center items-center group">
+                                <div className="text-6xl group-hover:text-accent transition-all duration-300">
+                                  {skill.icon}
+                                </div>
+                              </TooltipTrigger>
+                              <TooltipContent>
+                                <p className="capitalize">{skill.name}</p>
+                              </TooltipContent>
+                            </Tooltip>
+                          </TooltipProvider>
+                        </li>
+                      );
+                    })}
+                  </ul>
+                </ScrollArea>
+              </div>
+            </TabsContent>
+
             {/* education */}
             <TabsContent value="education" className="w-full h-full">
               <div className="flex flex-col gap-[30px] text-center xl:text-left">
@@ -274,7 +312,7 @@ const Resume = () => {
                           <span className="text-accent">
                             {item.institution}
                           </span>
-                          <h3 className="text-xl max-w-[260px] min-h-[60px] text-center lg:text-left ">
+                          <h3 className="text-xl max-w-[260px] min-h-[60px] text-center lg:text-left">
                             {item.degree}
                           </h3>
                           <div className="flex items-center gap-3">
@@ -282,38 +320,6 @@ const Resume = () => {
                             <span className="w-[6px] h-[6px] rounded-full bg-accent"></span>
                             <p className="text-white/60">{item.duration}</p>
                           </div>
-                        </li>
-                      );
-                    })}
-                  </ul>
-                </ScrollArea>
-              </div>
-            </TabsContent>
-
-            {/* skills */}
-            <TabsContent value="skills" className="w-full h-full">
-              <div className="flex flex-col gap-[30px] text-center xl:text-left">
-                <h3 className="text-4xl font-bold">{skills.title}</h3>
-                <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">
-                  {skills.description}
-                </p>
-                <ScrollArea className="h-[400px]">
-                  <ul className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 xl:gap-[30px]">
-                    {skills.skillList.map((skill, index) => {
-                      return (
-                        <li key={index}>
-                          <TooltipProvider>
-                            <Tooltip>
-                              <TooltipTrigger className="w-full h-[150px] bg-[#232329] rounded-xl flex justify-center items-center group">
-                                <div className="text-6xl group-hover:text-accent transition-all duration-300">
-                                  {skill.icon}
-                                </div>
-                              </TooltipTrigger>
-                              <TooltipContent>
-                                <p className="capitalize">{skill.name}</p>
-                              </TooltipContent>
-                            </Tooltip>
-                          </TooltipProvider>
                         </li>
                       );
                     })}
@@ -335,12 +341,12 @@ const Resume = () => {
                       return (
                         <li
                           key={index}
-                          className="flex items-center justify-center xl:justify-start gap-4 "
+                          className="flex items-center justify-center xl:justify-start gap-4"
                         >
                           <span className="text-white/60">
                             {item.fieldName}
                           </span>
-                          <span className="text-xl ">{item.fieldValue}</span>
+                          <span className="text-xl">{item.fieldValue}</span>
                         </li>
                       );
                     })}
