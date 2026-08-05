@@ -14,6 +14,9 @@ node_modules
 /.next/
 /out/
 
+# kiro
+/.kiro/
+
 # production
 /build
 
@@ -27,7 +30,12 @@ yarn-debug.log*
 yarn-error.log*
 
 # local env files
+.env
 .env*.local
+
+# prisma
+prisma/dev.db
+/generated
 
 # vercel
 .vercel

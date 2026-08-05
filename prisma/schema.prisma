@@ -1,0 +1,76 @@
+datasource db {
+  provider = "sqlite"
+}
+
+generator client {
+  provider = "prisma-client"
+  output   = "../generated/prisma"
+}
+
+model User {
+  id            String   @id @default(cuid())
+  email         String   @unique
+  passwordHash  String
+  createdAt     DateTime @default(now())
+}
+
+model ScraperConfig {
+  id               String   @id @default(cuid())
+  keywords         String   // JSON array stored as text
+  roleTypes        String   // JSON array stored as text
+  remoteOnly       Boolean  @default(true)
+  platforms        String   // JSON array: ["linkedin", "github", "twitter"]
+  scheduleEnabled  Boolean  @default(false)
+  scheduleInterval String?  // "daily" | "12h" | "6h"
+  updatedAt        DateTime @updatedAt
+  createdAt        DateTime @default(now())
+}
+
+model ScrapeJob {
+  id          String    @id @default(cuid())
+  status      String    // "running" | "completed" | "partial_failure" | "failed"
+  platforms   String    // JSON array of targeted platforms
+  results     String?   // JSON summary: { linkedin: { found: 5, errors: 0 }, ... }
+  errorLog    String?   // Error details if any platform failed
+  startedAt   DateTime  @default(now())
+  completedAt DateTime?
+  leads       Lead[]
+}
+
+model Lead {
+  id               String             @id @default(cuid())
+  platformSource   String             // "linkedin" | "github" | "twitter"
+  posterName       String
+  posterHeadline   String?
+  posterProfileUrl String
+  postContent      String
+  postDate         DateTime?
+  repositoryName   String?            // GitHub-specific
+  discoveredAt     DateTime           @default(now())
+  outreachStatus   String             @default("new") // "new" | "contacted" | "archived"
+  archived         Boolean            @default(false)
+  scrapeJobId      String?
+  scrapeJob        ScrapeJob?         @relation(fields: [scrapeJobId], references: [id])
+  outreachMessages OutreachMessage[]
+
+  @@unique([posterProfileUrl, postContent])
+}
+
+model OutreachMessage {
+  id          String   @id @default(cuid())
+  leadId      String
+  lead        Lead     @relation(fields: [leadId], references: [id])
+  content     String
+  format      String   // "email" | "linkedin"
+  version     Int      @default(1)
+  sent        Boolean  @default(false)
+  generatedAt DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+}
+
+model Settings {
+  id        String   @id @default(cuid())
+  key       String   @unique
+  value     String
+  updatedAt DateTime @updatedAt
+}
