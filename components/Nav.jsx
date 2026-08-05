@@ -24,10 +24,10 @@ const links = [
         name: 'Contact',
         path: '/contact'
     },
-    {
-        name: 'Resume',
-        path: '/resume'
-    },
+    // {
+    //     name: 'Resume',
+    //     path: '/resume'
+    // },
 ]
 
 const Nav = () => {

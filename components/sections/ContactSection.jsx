@@ -16,14 +16,14 @@ const contactLinks = [
     external: true,
   },
   {
-    href: "https://github.com/babatunde-oladejo",
+    href: "https://github.com/TundeOladejo",
     label: "Visit Babatunde Oladejo's GitHub profile",
     icon: Github,
     title: "GitHub",
     external: true,
   },
   {
-    href: "/resume.pdf",
+    href: "/babatunde_resume.pdf",
     label: "Download Babatunde Oladejo's resume",
     icon: FileText,
     title: "Resume",
